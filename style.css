@@ -11,16 +11,23 @@ body {
 img {
   width: 100vh;
   height: 100vh;
+  top: 0;
+  left: 0;
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 60% 10%;
+  z-index: 0;
 }
 div {
   position: absolute;
+  top: 0%;
+  left: 0%;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   opacity: 0;
   transition: all 1.5s ease;
   padding-top: 20%;
@@ -31,13 +38,13 @@ p {
   text-align: center;
   vertical-align: middle;
   color: rgb(0, 147, 205);
-  background-color: rgba(106, 106, 106, 0.35);
   text-shadow: 1.5px 1px black;
 }
 
 .a:hover,
 .a:active {
   opacity: 1;
+  background-color: rgba(106, 106, 106, 0.35);
 }
 @media all and (orientation: landscape) {
   img,
